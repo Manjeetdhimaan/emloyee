@@ -49,7 +49,7 @@ app.use(flash());
 
 
 //  mongodb+srv://newUser:<password>@cluster0.qcyjq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-mongoose.connect(process.env.MONGODB, { useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://manjeetuser:manjeet@employee-database.dxtzx.mongodb.net/employe-database?retryWrites=true&w=majority", { useUnifiedTopology: true })
     .then(() => {
         app.listen(port, () => {
             console.log(`app running on port ${port} and connected with db`)
